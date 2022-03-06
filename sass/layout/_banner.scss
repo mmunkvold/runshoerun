@@ -1,0 +1,39 @@
+@import "media-query";
+@use "../base/variables";
+@use "sass:map";
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 4em;
+  /* background-color: getColor(whiteclr);
+  background-image: url("../../images/notebook-dark.png"); */
+
+  h1 {
+    font-family: $bannerfont;
+  }
+
+  @include mq(medium) {
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    margin: 2em 0 6em;
+  }
+}
+
+.banner__img {
+  max-width: 90%;
+  margin: 0 auto;
+  border: 1px solid getColor(whiteclr);
+  box-shadow: $box-shadow;
+  transform: rotate(-3deg);
+
+  @include mq(medium) {
+    margin: 0;
+  }
+}
+
+.banner__txt {
+  padding: 1em;
+  font-family: $bannerfont;
+  line-height: 1.8;
+}

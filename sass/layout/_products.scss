@@ -1,0 +1,59 @@
+@import "media-query";
+@use "../base/variables";
+@use "sass:map";
+
+.product-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  img {
+    display: none;
+    margin-left: 1.5em;
+    border: 1px solid getColor(whiteclr);
+    box-shadow: $box-shadow;
+
+    @include mq(large) {
+      display: block;
+    }
+  }
+
+  @include mq(large) {
+    grid-template-columns: 1fr 350px;
+  }
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+
+  @include mq(small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq(medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.product {
+  height: fit-content;
+  padding: 1em;
+  background-color: getColor(whiteclr);
+  font-size: 1rem;
+  border: 1px solid getColor(light-grey);
+
+  &:hover {
+    box-shadow: $card-hover;
+  }
+}
+
+.product__img {
+  height: 200px;
+  background-position: center center;
+  background-size: cover;
+}
+
+#thumbnail {
+  width: 50%;
+}

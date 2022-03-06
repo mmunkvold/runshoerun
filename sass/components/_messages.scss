@@ -1,0 +1,28 @@
+.input-error {
+  display: none;
+  margin-top: 2px;
+  color: #dc3c2e;
+  font-size: 0.9rem;
+}
+
+.message {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1rem;
+  color: getColor(black);
+
+  &.error {
+    background: #ffa07a;
+    border-color: getColor(redclr);
+  }
+
+  &.warning {
+    background: #ffa500;
+    border-color: #ff4500;
+  }
+
+  &.success {
+    background: #90ee90;
+    border-color: #008000;
+  }
+}

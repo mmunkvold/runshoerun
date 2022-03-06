@@ -1,0 +1,17 @@
+@use "../base/variables";
+@use "sass:map";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 2em 2em 0;
+  text-align: center;
+  background-color: getColor(primary);
+  background-image: url("../../images/pool-table.png");
+
+  .copyright {
+    color: getColor(whiteclr);
+    text-decoration: none;
+  }
+}

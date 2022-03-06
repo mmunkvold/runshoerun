@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Login to Run Shoe, Run Site" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Login Page | Run Shoe, Run!</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__top">
+          <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="Back to home page" />
+          </a>
+          <div class="nav__container"></div>
+        </div>
+        <div class="nav__bottom">
+          <a class="nav__link" href="/products.html">Products</a>
+          <div class="nav__link shopping-bag">
+            <a href="cart.html">
+              <i class="bi bi-basket2-fill"></i>
+              <div class="total__items">0</div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="content-wrapper">
+      <main>
+        <h1>Login</h1>
+        <p class="top-txt">Log in to add new products <br />or make changes to existing products.</p>
+        <form id="login-form">
+          <div class="message-container"></div>
+          <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </main>
+    </div>
+    <footer>
+      <a class="copyright" href="index.html">&#169; 2022 Run Shoe, Run!</a>
+      <button id="totop">To top</button>
+    </footer>
+    <script src="js/login.js" type="module"></script>
+  </body>
+</html>

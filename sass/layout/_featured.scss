@@ -1,0 +1,64 @@
+@import "media-query";
+@use "../base/variables";
+@use "sass:map";
+
+/* .featured__wrapper {
+  display: grid;
+
+  @include mq(large) {
+    grid-template-columns: 350px 1fr;
+  }
+
+  img {
+    display: none;
+    margin-top: 3em;
+    border: 1px solid getColor(whiteclr);
+    box-shadow: $box-shadow;
+
+    @include mq(large) {
+      display: block;
+    }
+  }
+} */
+
+.featured__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  //justify-content: center;
+  /*   display: grid;
+  //width: min(95%);
+  gap: 1.5em;
+  //max-width: 100%;
+  margin: 1em auto;
+
+  @include mq(medium) {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2em auto;
+  }
+
+  @include mq(large) {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3em auto;
+  } */
+}
+
+.featured__product {
+  flex: 1 1 10rem;
+}
+
+.featured__img {
+  padding-top: 100%;
+  background-size: cover;
+}
+
+.featured__txt {
+  padding: 0.2em;
+  text-align: center;
+}
+
+.featured__link {
+  font-size: smaller;
+  text-decoration: none;
+}

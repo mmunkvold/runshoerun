@@ -1,0 +1,56 @@
+@import "media-query";
+@use "../base/variables";
+@use "sass:map";
+
+form {
+  max-width: 350px;
+  margin: 1em auto 4em;
+  padding: 2em;
+  background: getColor(whiteclr);
+  font-family: inherit;
+  border: $border-lightgrey;
+  box-shadow: $box-shadow;
+
+  input,
+  textarea {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: inherit;
+    border-radius: $border-radius;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input[type="checkbox"] {
+    width: auto;
+    display: inline;
+  }
+
+  .inline {
+    display: block;
+  }
+
+  .edit-form {
+    display: none;
+  }
+}
+
+.search-form {
+  text-align: center;
+
+  @include mq(medium) {
+    text-align: left;
+  }
+
+  input {
+    width: 90%;
+
+    @include mq(medium) {
+      width: 247px;
+    }
+  }
+}

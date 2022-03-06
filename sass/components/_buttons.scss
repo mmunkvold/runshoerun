@@ -1,0 +1,85 @@
+//@import "media-query";
+@use "../base/variables";
+@use "sass:map";
+
+button {
+  width: auto;
+  margin-top: 0.8em;
+  padding: 0.5em 0.7em;
+  background: getColor(primary);
+  color: getColor(whiteclr);
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  border: $border-transparent;
+
+  cursor: pointer;
+  border-radius: $border-radius;
+  transition: $button-transition-hover;
+
+  &:hover {
+    background: getColor(whiteclr);
+    color: getColor(primary);
+    border: 1px solid getColor(primary);
+  }
+}
+
+.cart__btn {
+  min-width: 100px;
+  margin: 0.5em auto 0;
+  padding: 0.5em 0.5em 0.8em;
+  background: getColor(btnclr);
+  border: $border-transparent;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  &:hover {
+    background-color: getColor(whiteclr);
+    color: getColor(dark-grey);
+    border: 1px solid getColor(btnclr);
+  }
+}
+
+.center--btn {
+  text-align: center;
+}
+
+.delete-btn {
+  background: getColor(redclr);
+  border: $border-transparent;
+
+  &:hover,
+  &:focus {
+    background: getColor(whiteclr);
+    color: getColor(redclr);
+    border: 1px solid getColor(redclr);
+  }
+}
+
+#logout__btn {
+  width: auto;
+  color: getColor(whiteclr);
+
+  &:hover {
+    color: getColor(primary);
+  }
+}
+
+:focus {
+  transform: none !important;
+}
+
+#totop {
+  width: 70px;
+  margin: 1.5em auto;
+  padding: 0.5em 1em;
+  background: none;
+  color: getColor(whiteclr);
+  font-size: small;
+  text-transform: lowercase;
+  border: $border-lightgrey;
+}
+
+#totop:hover {
+  background: getColor(whiteclr);
+  color: getColor(blackclr);
+}

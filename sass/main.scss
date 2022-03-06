@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:wght@600&family=Roboto:wght@400;700&display=swap");
+
+@import "base/variables";
+@import "components/messages";
+@import "components/buttons";
+@import "layout/nav";
+@import "layout/forms";
+@import "layout/footer";
+@import "layout/banner";
+@import "layout/featured";
+@import "layout/products";
+@import "layout/cart";
+@import "layout/detail";
+@import "layout/media-query";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  font-family: $bodyfont;
+  background-color: getColor(whiteclr);
+  background-image: url("../../images/notebook-dark.png");
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h1,
+h2 {
+  font-family: $bannerfont;
+  //font-weight: 700;
+  text-align: center;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: getColor(blackclr);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:focus {
+  outline: 2px solid var(--light-color);
+  outline-offset: 3px;
+}
+
+/* Global Styling */
+
+header {
+  padding-top: 1em;
+  background: getColor(whiteclr);
+  border-bottom: $border-lightgrey;
+  box-shadow: $box-shadow;
+}
+
+main {
+  max-width: 1140px;
+  margin: 0 auto 6em;
+}
+
+.content-wrapper {
+  padding: 1.5em 1.5em 0;
+}
+
+/* Miscellanous */
+
+.top-txt {
+  max-width: 50ch;
+  margin: 0 auto;
+  font-family: $bodyfont;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 0.5em;
+}
+
+/* Loading Bar */
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+}
+
+.loading__bar {
+  appearance: none;
+  height: 1em;
+  width: 10em;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.loading__bar::-moz-progress-bar {
+  background: getColor(btnclr);
+}
+
+/* Main Media Query */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

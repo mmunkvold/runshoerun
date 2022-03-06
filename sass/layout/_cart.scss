@@ -1,0 +1,72 @@
+@import "media-query";
+@use "../base/variables";
+@use "sass:map";
+
+.cart__container {
+  max-width: 550px;
+  margin: 1em auto 0;
+  padding: 1em 1em 0;
+  font-size: small;
+  background: getColor(whiteclr);
+  border: $border-lightgrey;
+
+  h2 {
+    font-size: smaller;
+  }
+
+  @include mq(medium) {
+    font-size: 1rem;
+  }
+}
+
+.total {
+  margin: 1em 0;
+  font-size: larger;
+  font-weight: bolder;
+  text-align: right;
+}
+
+.cart__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1em;
+  border-bottom: $border-lightgrey;
+}
+
+span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cart__img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.5em;
+  background-position: center;
+  background-size: cover;
+
+  @include mq(medium) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.add__one,
+.remove__one {
+  margin: 0 0.7em;
+  background-color: getColor(whiteclr);
+  color: getColor(blackclr);
+  border: $border-lightgrey;
+}
+
+.remove {
+  background: none;
+  color: getColor(blackclr);
+  border: $border-transparent;
+}
+
+.cart {
+  display: none;
+}
