@@ -29,7 +29,7 @@
 
 .detail__img {
   width: 100%;
-  height: 450px;
+  max-height: 450px;
   background: getColor(whiteclr);
   background-repeat: no-repeat;
   background-size: cover;
