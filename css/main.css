@@ -138,7 +138,7 @@ button:hover {
 }
 
 .nav__bottom {
-  margin: 0 0 1em 1em;
+  margin: 1.2em 0 1em 1em;
   font-weight: bold;
   text-transform: uppercase;
   -webkit-box-pack: end;
