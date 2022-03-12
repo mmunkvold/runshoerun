@@ -15,7 +15,7 @@ const detailProductContainer = document.querySelector(".detail-container");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const url = "http://localhost:1337/products/" + id;
+const url = "https://under-my-umbrella.herokuapp.com/products" + id;
 
 async function getSingleProduct() {
   try {
@@ -37,7 +37,7 @@ async function getSingleProduct() {
 getSingleProduct();
 
 function renderSingleProduct(results) {
-  const imageUrl = "http://localhost:1337";
+  const imageUrl = "https://under-my-umbrella.herokuapp.com";
   const { id, title, price, image, description } = results;
 
   detailProductContainer.innerHTML = `
