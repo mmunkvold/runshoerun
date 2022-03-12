@@ -33,7 +33,7 @@ getFeatured();
 const bannerContainer = document.querySelector(".banner__item");
 
 const bannerImg = async () => {
-  const url = BASE_URL + "home";
+  const url = BASE_URL;
 
   try {
     const response = await fetch(url);
