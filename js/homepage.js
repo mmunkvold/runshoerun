@@ -38,7 +38,7 @@ const bannerImg = async () => {
   try {
     const response = await fetch(url);
     const result = await response.json();
-    const imageUrl = "http://localhost:1337";
+    const imageUrl = "https://under-my-umbrella.herokuapp.com/products";
 
     bannerContainer.innerHTML = `
     <img class="banner__img" src="${imageUrl}${result.hero_banner.url}" alt="${result.hero_banner.alternativeText}">`;
