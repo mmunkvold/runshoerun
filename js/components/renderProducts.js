@@ -6,7 +6,7 @@ export default function renderProducts(products) {
   productContainer.innerHTML = "";
 
   products.forEach((product) => {
-    const imageUrl = "http://localhost:1337";
+    const imageUrl = "https://under-my-umbrella.herokuapp.com/";
     const { id, title, price, image } = product;
 
     productContainer.innerHTML += `
