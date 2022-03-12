@@ -3,7 +3,7 @@ export default function renderFeatured(products) {
   featuredContainer.innerHTML = "";
 
   products.forEach((product) => {
-    const imageUrl = "http://localhost:1337";
+    const imageUrl = "https://under-my-umbrella.herokuapp.com";
     const { id, title, price, image } = product;
 
     if (product.featured) {
