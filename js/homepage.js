@@ -38,10 +38,10 @@ const bannerImg = async () => {
   try {
     const response = await fetch(url);
     const result = await response.json();
-    const imageUrl = "https://under-my-umbrella.herokuapp.com";
+    //const imageUrl = "https://under-my-umbrella.herokuapp.com";
 
     bannerContainer.innerHTML = `
-    <img class="banner__img" src="${imageUrl}${result.hero_banner.url}" alt="${result.hero_banner.alternativeText}">`;
+    <img class="banner__img" src="${result.hero_banner.url}" alt="${result.hero_banner.alternativeText}">`;
   } catch (error) {
     displayMessage("error", messages.noBannerImg, ".banner__item");
   }
