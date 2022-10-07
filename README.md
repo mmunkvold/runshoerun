@@ -5,7 +5,7 @@
     <img src="https://github.com/mmunkvold/runshoerun/blob/main/images/detail.png" width="250" alt="Shopping cart of the Run Shoe, Run site">
 </p>
 
-Building an ecommerce site as semester project 2 assignment - I called it Run Shoe, Run! *(Get the ref to Forrest Gump?... ;-))*
+Building an ecommerce site as semester project 2 assignment - I called it Run Shoe, Run! *(Get the ref to Forrest Gump?... :wink:)*
 
 ## Description
 
