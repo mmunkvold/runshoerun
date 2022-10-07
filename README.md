@@ -25,7 +25,7 @@ Project consists of:
 
 - JavaScript (plain vanilla js)
 - HTML
-- CSS (plain vanilla css)
+- [SASS](https://sass-lang.com/)
 
 ## Installing and running the app
 
