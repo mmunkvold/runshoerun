@@ -1,9 +1,8 @@
 # SEMESTER PROJECT 2 
 
-<p float="left">
-    <img src="https://github.com/mmunkvold/runshoerun/blob/main/images/runshoerun.png" width="250" alt="Home Page of Run Shoe, Run site">
-    <img src="https://github.com/mmunkvold/runshoerun/blob/main/images/detail.png" width="250" alt="Shopping cart of the Run Shoe, Run site">
-</p>
+<img src="https://github.com/mmunkvold/runshoerun/blob/main/images/runshoerun.png" width="250" alt="Home Page of Run Shoe, Run site">&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/mmunkvold/runshoerun/blob/main/images/detail.png" width="250" alt="Shopping cart of the Run Shoe, Run site">
+
 
 Building an ecommerce site as semester project 2 assignment - I called it **Run Shoe, Run!** *(Get the ref to Forrest Gump?... :wink:)*
 
@@ -13,7 +12,7 @@ Assignment was to build an eccommerce site, with shoes as the product. Displayin
 
 A local api was used, so no products showing on the online site as for now unfortunately.
 
-Project consists of:
+**Project consists of:**
 
 - Home Page - which displays a banner and some featured products from the api call
 - A Product Page which lists all products, with a search function
