@@ -4,13 +4,13 @@
 <img src="https://github.com/mmunkvold/runshoerun/blob/main/images/detail.png" width="250" alt="Shopping cart of the Run Shoe, Run site">
 
 
-Building an ecommerce site as semester project 2 assignment - I called it **Run Shoe, Run!** *(Get the ref to Forrest Gump?... :wink:)*
+Building an ecommerce site as semester project 2 assignment - I called it **[Run Shoe, Run!](https://runshoerun.netlify.app/)** *(Get the ref to Forrest Gump?... :wink:)*
 
 ## Description
 
 Assignment was to build an eccommerce site, with shoes as the product. Displaying a banner and featured products on the home page, a product page listing all products and a detail page of each product. A login to take you to the admin area where you can add/change/delete products, and a shopping cart. 
 
-A local api was used, so no products showing on the online site as for now unfortunately.
+*NB! A local api was used, so no products showing on the online site as for now unfortunately.*
 
 **Project consists of:**
 
